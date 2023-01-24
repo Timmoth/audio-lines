@@ -67,7 +67,9 @@ function App({ arrayBuffer }: { arrayBuffer: ArrayBuffer | undefined }) {
 const fftSize = 256;
 async function createAudio(arrayBuffer: ArrayBuffer | undefined) {
   if (!arrayBuffer) {
-    const res = await fetch("./dist/tetris.mp3");
+    const res = await fetch(
+      "https://timmoth.github.io/audio-lines/dist/tetris.mp3"
+    );
     arrayBuffer = await res.arrayBuffer();
   }
   const context = new window.AudioContext();
