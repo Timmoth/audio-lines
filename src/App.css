@@ -1,0 +1,51 @@
+.app-container{
+    background-color: #001932;
+    width: 100%;
+    height: 100%;
+}
+.file {
+    display: none;
+}
+
+.file-input-label {
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.label {
+    text-align: center;
+    font-size: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.file-input{
+    padding: 10px 40px 10px 40px;
+}
+
+.playButton {
+    padding: 10px 40px 10px 40px;
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.container{
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: linear-gradient(40deg, #ff6ec4, #7873f5);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transition: transform .2s ease-out;
+}
